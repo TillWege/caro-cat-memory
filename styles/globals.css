@@ -15,6 +15,22 @@ a {
   box-sizing: border-box;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 255px);
+  grid-template-rows: repeat(6, 255px);
+  column-gap: 20px;
+  row-gap: 20px;
+  height: 800px;
+  width: 800px;
+}
+
+.item {
+  background-color: red;
+  height: 255px;
+  width: 255px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
