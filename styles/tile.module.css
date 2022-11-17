@@ -1,6 +1,31 @@
 
 .item {
-    background-color: red;
-    height: 255px;
-    width: 255px;
-  }
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.item:before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    padding-bottom: calc(1/1 * 100%);
+}
+
+.item_hidden {
+    background-color: gray;
+    border-radius: 10%;
+    border-color: white;
+}
+
+.collected {
+    background-color: black;
+    
+}
+
+.item_show {
+    background-color: blue;
+}

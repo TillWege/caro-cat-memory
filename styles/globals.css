@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height: 100vh;
 }
 
 a {
@@ -17,18 +18,31 @@ a {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(6, 255px);
-  grid-template-rows: repeat(6, 255px);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  width: 90%;
+  padding-left: 5%;
+  height: 100%; 
   column-gap: 20px;
   row-gap: 20px;
-  height: 800px;
-  width: 800px;
+  aspect-ratio: 1;
 }
 
-.item {
-  background-color: red;
-  height: 255px;
-  width: 255px;
+.headerbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+}
+
+.image {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    pointer-events: none;
 }
 
 @media (prefers-color-scheme: dark) {
