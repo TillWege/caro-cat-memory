@@ -27,5 +27,6 @@
 }
 
 .item_show {
-    background-color: blue;
+    background-color: gray;
+    border-radius: 10%;
 }
